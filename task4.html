@@ -1,0 +1,92 @@
+<!DOCTYPE html>   
+<html lang="en">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HELLO</title>
+<link rel="icon" href="https://images.shiksha.com/mediadata/images/1653047204php2C7m4l.jpeg">
+<style>
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px ;
+    box-sizing: border-box;
+  }
+  select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  .success-message {
+    text-align: center;
+    color:green;
+    margin-top: 10px;
+  }
+  .btn-container {
+    text-align: center;
+  }
+</style>
+</head>
+<body style="background-color:rgb(184, 240, 239)">
+<center><h2>REGISTRATION PAGE</h2></center>
+<br>
+<form method="post" action="#" onsubmit="return handleSubmit()">
+<div class="container">
+    <label for="fname">NAME</label>
+    <input type="text" id="fname" name="fname" placeholder="enter name"><br>
+    <label for="address">ADDRESS</label>
+    <textarea id="address" name="address" placeholder="enter address"></textarea><br>
+    <label>GENDER</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    <label>SKILLS SET KNOWN</label><br>
+    <input type="checkbox" id="c" name="skills" value="c">
+    <label for="c">C</label>
+    <input type="checkbox" id="python" name="skills" value="python">
+    <label for="python">Python</label>
+    <input type="checkbox" id="html" name="skills" value="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="java" name="skills" value="java">
+    <label for="java">Java</label>
+    <input type="checkbox" id="c#" name="skills" value="c#">
+    <label for="c#">C#</label><br><br>
+<label for="activities">EXTRACURICULAR ACTIVITIES</label>
+<textarea id="activities" name="activities" placeholder="Please enter"></textarea><br>
+<label for="nationality">NATIONALITY</label>
+<select name="NATIONALITY">
+<option value="">-- select one --</option>
+<option value="american">American</option>
+<option value="indian">Indian</option>
+<option value="canadian">Canadian</option>
+<option value="japanese">Japanese</option>
+<option value="southkorean">South Korean</option>
+</select>
+</div>
+<br>
+<div class="btn-container">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </div>
+</form>
+
+<div class="success-message" id="successMessage" style="display: none;">Form successfully submitted!</div>
+<script>
+  function handleSubmit() {
+    document.getElementById("successMessage").style.display = "block";
+    return false; 
+  }
+</script>
+</body>
+</html>
